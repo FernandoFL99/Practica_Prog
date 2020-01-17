@@ -5,6 +5,8 @@
  */
 package ejemplogithub;
 
+import java.util.Scanner;
+
 /**
  *
  * @author ferna
@@ -16,7 +18,15 @@ public class EjemploGitHub {
      */
     public static void main(String[] args) 
     {
-        // TODO code application logic here
+        Scanner teclado = new Scanner(System.in);
+        int numero;
+        
+        System.out.println("Dame un numero");
+        numero=teclado.nextInt();
+        
+        for (int i = 0; i < 10; i++) {
+            System.out.println(numero*i);
+        }
     }
     
 }
